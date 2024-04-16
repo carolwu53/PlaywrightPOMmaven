@@ -7,6 +7,23 @@
     </listeners>
 
     <test name="Home Page Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.qa.fay.tests.HomePageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Home Page Test">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="com.qa.fay.tests.HomePageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Home Page Test">
+        <parameter name="browser" value="chromium" />
         <classes>
             <class name="com.qa.fay.tests.HomePageTest">
             </class>
@@ -14,6 +31,23 @@
     </test>
 
     <test name="Login Page Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.qa.fay.tests.LoginPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login Page Test">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="com.qa.fay.tests.LoginPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login Page Test">
+        <parameter name="browser" value="chromium" />
         <classes>
             <class name="com.qa.fay.tests.LoginPageTest">
             </class>
