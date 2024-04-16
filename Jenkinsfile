@@ -2,6 +2,10 @@ pipeline
 {
     agent any
 
+    tools{
+        	maven 'maven'
+         }
+
     stages
     {
         stage('Build')
@@ -30,7 +34,7 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/carolwu/PlaywrightPOMmaven'
+                    git 'https://github.com/naveenanimation20/Playwright-Java-PageObjectModel'
                     sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regressions.xml"
 
                 }
