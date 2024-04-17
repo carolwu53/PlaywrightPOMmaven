@@ -2,6 +2,7 @@ pipeline
 {
     agent any
 
+/*
     stages
     {
         stage('Build')
@@ -20,7 +21,7 @@ pipeline
                 }
             }
         }
-
+   */
         stage("Deploy to QA"){
             steps{
                 echo("deploy to qa")
